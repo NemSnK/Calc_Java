@@ -90,6 +90,7 @@ public class Main {
            case "/"->{
                if(b==0) return "на ноль делить нельзя";
                res = a / b;
+               if(res<1&&isRoman==true) return "в римской системе нет отрицательных чисел и нуля";
            }
        }
        if(isRoman==true)return NumToRom(res);
